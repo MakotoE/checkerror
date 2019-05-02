@@ -5,10 +5,10 @@ import (
 	"testing"
 )
 
-func Check(t *testing.T, expectError bool, err error) {
+func Check(t *testing.T, expectError bool, err error, msgAndArgs ...interface{}) {
 	if expectError {
-		assert.NotNil(t, err)
+		assert.NotNil(t, err, msgAndArgs)
 	} else {
-		assert.Nil(t, err)
+		assert.Nil(t, err, msgAndArgs)
 	}
 }
