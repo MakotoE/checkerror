@@ -7,8 +7,8 @@ import (
 
 func Check(t *testing.T, expectError bool, err error, msgAndArgs ...interface{}) {
 	if expectError {
-		assert.NotNil(t, err, msgAndArgs)
+		assert.NotNil(t, err, msgAndArgs...)
 	} else {
-		assert.Nil(t, err, msgAndArgs)
+		assert.Nil(t, err, msgAndArgs...)
 	}
 }
