@@ -1,4 +1,4 @@
-module gitlab.com/MakotoE/checkerror
+module github.com/MakotoE/checkerror
 
 go 1.12
 
